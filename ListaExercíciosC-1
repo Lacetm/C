@@ -1,0 +1,42 @@
+#include <stdio.h>
+#include <math.h>
+int main(){
+float num_1, num_2, soma, prod1, quad1, sqrt1, sindif, mod;
+//Entrada de Dados
+	printf("Digite um número: ");
+	scanf("%f", &num_1);
+	printf("Digite outro número: ");
+	scanf("%f", &num_2);
+	
+//Processamento
+// a soma dos números,
+	soma = num_1+num_2;
+	printf("A soma dos números é igual a: %f\n", soma);
+	
+// o produto do primeiro número pelo quadrado do segundo
+	prod1 = num_1*pow(num_2,2);
+	printf("O produto do primeiro número pelo quadrado do segundo número é igual a: %f\n", prod1);
+	
+// o quadrado do primeiro número,
+	quad1 = pow(num_1,2);
+	printf("O quadrado do primeiro número é igual a: %f\n", quad1);
+	
+
+// a raiz quadrada da soma dos quadrados,
+	sqrt1= sqrt(pow(num_1,2)+pow(num_2,2));
+	printf("A raiz quadrada da soma dos quadrados é igual a: %f\n", sqrt1);
+
+// o seno da diferença do primeiro número pelo segundo e	
+	sindif= sin((num_1-num_2));
+	printf("O seno da diferença do primeiro número pelo segundo é igual a: %f\n", sindif);
+	
+	
+//O módulo do primeiro número.
+
+	mod = abs(num_1);
+	printf("O módulo do primeiro número é igual a: %f\n", mod);
+	
+
+//Saída de Dados	
+	
+}
